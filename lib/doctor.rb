@@ -11,6 +11,10 @@ class Doctor
     Appointment.new(date, patient, self).tap {|apt| self.appointments << apt}
   end 
   
+  def patients 
+    self.appointments.map {|apt| apt.patient
+  end 
+  
   def self.all 
     @@all 
   end 
