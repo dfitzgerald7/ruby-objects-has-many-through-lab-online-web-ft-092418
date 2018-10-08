@@ -21,9 +21,9 @@ class Artist
   end 
   
   def genres 
-    genre_arr = []
-    self.songs.each {|song| genre_arr << song.genre unless genre_arr.include?(song.genre)}
-    genre_arr
+    
+    self.songs.map {|song| genre_arr << song.genre unless genre_arr.include?(song.genre)}
+    
   end 
   
   def self.all 
