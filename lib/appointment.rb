@@ -6,6 +6,7 @@ class Appointment
     self.date = date 
     self.patient = patient 
     self.doctor = doctor
+    @@all << self
   end 
   
 end 
