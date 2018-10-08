@@ -12,7 +12,7 @@ class Doctor
   end 
   
   def patients 
-    self.appointments.map {|apt| apt.patient
+    self.appointments.map {|apt| apt.patient}.uniq
   end 
   
   def self.all 
