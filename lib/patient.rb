@@ -16,7 +16,7 @@ class Patient
   end 
   
   def doctors 
-    
+    self.appointments.map {|apt| apt.doctor}.uniq
   end 
   
   def self.all 
