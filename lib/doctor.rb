@@ -1,3 +1,4 @@
+require "pry"
 class Doctor 
   attr_accessor :name, :appointments
   @@all = [] 
@@ -12,6 +13,7 @@ class Doctor
   end 
   
   def patients 
+    binding.pry
     self.appointments.map {|apt| apt.patient}.uniq
   end 
   
