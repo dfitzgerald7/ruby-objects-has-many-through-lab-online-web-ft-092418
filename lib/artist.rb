@@ -23,6 +23,7 @@ class Artist
   def genres 
     genre_arr = []
     self.songs.each {|song| genre_arr << song.genre unless genre_arr.include?(song.genre)}
+    genre_arr
   end 
   
   def self.all 
