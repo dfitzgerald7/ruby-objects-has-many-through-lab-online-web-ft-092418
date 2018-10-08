@@ -14,7 +14,7 @@ class Genre
   end 
   
   def artists 
-    self.songs.map {|song| song.artists}.uniq
+    self.songs.map {|song| song.artist}.uniq
   end 
   
   def self.all 
