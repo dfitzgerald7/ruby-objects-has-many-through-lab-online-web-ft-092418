@@ -13,6 +13,7 @@ class Artist
    # binding.pry
     song = Song.new(name, self, genre)
     self.songs << song
+    song
   end 
   
   #def songs 
