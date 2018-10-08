@@ -22,7 +22,7 @@ class Artist
   
   def genres 
     
-    self.songs.map {|song| genre_arr << song.genre unless genre_arr.include?(song.genre)}
+    self.songs.map {|song| song.genre}.uniq
     
   end 
   
