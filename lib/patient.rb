@@ -6,4 +6,8 @@ class Patient
     self.name = name
   end 
   
+  def new_appointment 
+    
+  end 
+  
 end 
